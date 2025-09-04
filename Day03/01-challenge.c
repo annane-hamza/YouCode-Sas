@@ -2,9 +2,9 @@
 
 int     main()
 {
-    int size;
-    scanf("enter the size: %d ",&size);
+   
 
+    int arr[8] = {9,3,2,9,7,7,-1,-1};
 
     for (int i = 0 ; i < 8 ; i++)
     {
@@ -27,5 +27,7 @@ int     main()
         }
     }
 
-    
+    printf("\n");
+
+    return 0;
 }
