@@ -7,7 +7,7 @@ Here I will share my exercises, projects, and progress as I learn the fundamenta
 
 ## 📷 Bootcamp Banner
 
-![Bootcamp Banner](img/youcode.png)
+![Bootcamp Banner](./img/youcode.png)
 
 
 
