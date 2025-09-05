@@ -30,4 +30,6 @@ int     main()
     printf("5: %d\n",Billets_5);
     printf("1: %d\n",Billets_1);
 
+    return 0;
+
 }
