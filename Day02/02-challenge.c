@@ -19,6 +19,7 @@ int main()
 
     printf("Entrez un nombre a deux chiffres: ");
     scanf("%d",&num);
+    
 
     printf("Le nombre inverse est : %d \n",rev_number(num));
 

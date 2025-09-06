@@ -7,6 +7,7 @@ int     main()
     printf("Entrez un numéro de téléphone: ");
     scanf("%s",&number);
     
+    
     int count = 0;
 
     while(number[count] != '\0')

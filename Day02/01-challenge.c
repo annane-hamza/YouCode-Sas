@@ -32,7 +32,7 @@ int     main()
 
     int sum = count_digit(GS1) + count_digit(id_group) + count_digit(code) + count_digit(article_code) + count_digit(cheffre_controle);
 
-    printf("chiffres: %d\n",sum);
+    printf("Total  chiffres: %d\n",sum);
 
 
     if (sum > 13)
