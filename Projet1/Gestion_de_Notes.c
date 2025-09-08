@@ -143,6 +143,51 @@ void ajouterNote(float notes[])
     printf("Nouvelle note ajoutée avec succès.\n");
 }
 
+int modifierNote(float notes[], int n)
+{
+    int index;
+    float nouvelleValeur;
+
+    printf("index (0..%d): ", n-1);
+    scanf("%d", &index);
+
+    if (index < 0 || index >= n) {
+        printf("Index invalide.\n");
+        return -1;
+    }
+
+    printf("update note: ");
+    scanf("%f", &nouvelleValeur);
+
+    if (nouvelleValeur < 0 || nouvelleValeur > 20) {
+        printf("Valeur invalide.\n");
+        return -1;
+    }
+
+    notes[index] = nouvelleValeur;
+    printf("Note modifiee avec succes.\n");
+
+    return 0;
+}
+
+int supprimerNote(float notes[], int n)
+{
+    int index;
+
+    printf("index to delete?: ");
+    scanf("%d",&index);
+
+    for (int i = index ; i < n - 1 ; i++)
+    {
+        notes[i] = notes[i + 1];
+    }
+
+    printf("Note supprimée avec succès.\n");
+
+    return n - 1;
+}
+
+
 
 int main()
 {
@@ -182,8 +227,13 @@ int main()
         case 4:
             ajouterNote(notes);
             break;
-        
-
+        case 5:
+            modifierNote(notes,nbNotes);
+            break;
+        case 6:
+            supprimerNote(notes,nbNotes);
+            break;
+            
         default:
             break;
         }
