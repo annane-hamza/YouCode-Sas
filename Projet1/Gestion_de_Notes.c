@@ -174,15 +174,25 @@ int supprimerNote(float notes[], int n)
 {
     int index;
 
-    printf("index to delete?: ");
-    scanf("%d",&index);
+    if (n == 0) {
+        printf("Aucune note a supprimer.\n");
+        return n; 
+    }
 
-    for (int i = index ; i < n - 1 ; i++)
-    {
+    printf("Index de la note a supprimer (0..%d): ", n - 1);
+    scanf("%d", &index);
+
+    if (index < 0 || index >= n) {
+        printf("Index invalide.\n");
+        return n; 
+    }
+
+    
+    for (int i = index; i < n - 1; i++) {
         notes[i] = notes[i + 1];
     }
 
-    printf("Note supprimée avec succès.\n");
+    printf("Note supprimae avec succès.\n");
 
     return n - 1;
 }
