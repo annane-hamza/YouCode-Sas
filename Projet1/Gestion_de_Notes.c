@@ -30,6 +30,7 @@ void saisirNotes(float notes[])
                 printf("La note doit etre comprise entre 0 et 20.\n");
             }
         } while (notes[i] < 0 || notes[i] > 20);
+
     }
 
     track_notes = 1;

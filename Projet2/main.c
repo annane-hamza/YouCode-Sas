@@ -169,6 +169,11 @@ void afficherBulletin()
   
     calculerMoyenneGenerale();
 }
+
+char affichstudentbyid(char id)
+{
+    
+}
 int main()
 {
     int choix;
